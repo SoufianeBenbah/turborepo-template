@@ -1,0 +1,5 @@
+npm run lint ||
+(
+    echo 'Please run ``` npm run lint:fix ``` and fix lint errors before commiting';
+    false;
+)

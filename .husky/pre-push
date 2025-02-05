@@ -1,0 +1,11 @@
+npm run test ||
+(
+    echo 'Please run ``` npm run test ``` and fix test errors before pushing your code';
+    false;
+)
+
+npm run build ||
+(
+    echo 'Please run ``` npm run build ``` and fix build errors before pushing your code';
+    false;
+)

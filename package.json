@@ -1,0 +1,27 @@
+{
+  "name": "linea-hub",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "test": "turbo test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "turbo": "^2.4.0",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
